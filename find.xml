@@ -31,5 +31,6 @@
     <mask>*.txt</mask>
     <mask>*.py</mask>
     <mask>*.idl</mask>
+    <mask>*.yaml</mask>
   </component>
 </application>
