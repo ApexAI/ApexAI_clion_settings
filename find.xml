@@ -32,5 +32,6 @@
     <mask>*.py</mask>
     <mask>*.md</mask>
     <mask>*.hpp, *cpp</mask>
+    <mask>*idl</mask>
   </component>
 </application>
