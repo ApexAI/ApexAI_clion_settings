@@ -5,6 +5,7 @@
     <option name="defaultScopeName" value="All Places" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.idl" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
@@ -43,7 +44,7 @@
     <mask>*yaml</mask>
     <mask>*BUILD</mask>
     <mask>*hpp, *cpp</mask>
-    <mask>*.idl</mask>
     <mask>*.txt</mask>
+    <mask>*.idl</mask>
   </component>
 </application>
