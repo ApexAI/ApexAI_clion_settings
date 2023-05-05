@@ -44,5 +44,6 @@
     <mask>*.txt</mask>
     <mask>*.idl</mask>
     <mask>*.yaml</mask>
+    <mask>*.cmake</mask>
   </component>
 </application>
