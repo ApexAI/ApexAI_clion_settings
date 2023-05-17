@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*hpp" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.cp</mask>
@@ -31,7 +32,6 @@
     <mask>*srv</mask>
     <mask>*idl</mask>
     <mask>*md</mask>
-    <mask>*hpp</mask>
     <mask>*hpp, *cpp</mask>
     <mask>*.txt</mask>
     <mask>*.idl</mask>
@@ -46,5 +46,6 @@
     <mask>*cpp, *hpp</mask>
     <mask>*cpp</mask>
     <mask>*yaml</mask>
+    <mask>*hpp</mask>
   </component>
 </application>
