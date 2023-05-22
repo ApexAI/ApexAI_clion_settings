@@ -46,5 +46,6 @@
     <mask>*cpp</mask>
     <mask>*hpp</mask>
     <mask>*yaml</mask>
+    <mask>*txt</mask>
   </component>
 </application>
