@@ -1,0 +1,23 @@
+<application>
+  <component name="CommonProfilerUISettings">
+    <option name="callTreeState">
+      <call-tree-ui>
+        <option name="showCalleesList" value="false" />
+      </call-tree-ui>
+    </option>
+    <option name="threadListOptions">
+      <thread-list>
+        <option name="showMetrics">
+          <map>
+            <entry key="threadIdMetric" value="false" />
+          </map>
+        </option>
+        <option name="sortMetrics">
+          <map>
+            <entry key="samplesCountMetric" value="true" />
+          </map>
+        </option>
+      </thread-list>
+    </option>
+  </component>
+</application>
