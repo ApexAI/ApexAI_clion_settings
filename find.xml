@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*BUILD" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.cp</mask>
@@ -47,7 +48,7 @@
     <mask>*md</mask>
     <mask>*cpp</mask>
     <mask>*cpp, *hpp</mask>
-    <mask>*BUILD</mask>
     <mask>*json</mask>
+    <mask>*BUILD</mask>
   </component>
 </application>
