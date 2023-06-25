@@ -30,5 +30,7 @@
     <mask>*.cpp</mask>
     <mask>*.txt</mask>
     <mask>*.py</mask>
+    <mask>BUILD</mask>
+    <mask>BUILD.bazel</mask>
   </component>
 </application>
