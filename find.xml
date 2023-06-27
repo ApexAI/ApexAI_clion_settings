@@ -46,8 +46,8 @@
     <mask>*cpp</mask>
     <mask>*cpp, *hpp</mask>
     <mask>*json</mask>
-    <mask>*BUILD</mask>
     <mask>*yaml</mask>
     <mask>*md</mask>
+    <mask>*BUILD</mask>
   </component>
 </application>
