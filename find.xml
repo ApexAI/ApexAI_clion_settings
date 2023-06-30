@@ -5,6 +5,7 @@
     <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.css</mask>
     <mask>*.html</mask>
+    <mask>*.xml</mask>
     <mask>*.cp</mask>
     <mask>*.inl</mask>
     <mask>*.ino</mask>
@@ -27,27 +28,7 @@
     <mask>*.c</mask>
     <mask>*.hpp</mask>
     <mask>*.cpp</mask>
-    <mask>*.py</mask>
-    <mask>*srv</mask>
-    <mask>*idl</mask>
     <mask>*.txt</mask>
-    <mask>*.idl</mask>
-    <mask>*.cmake</mask>
-    <mask>*.cpp, *hpp</mask>
-    <mask>*.md</mask>
-    <mask>*.yaml</mask>
-    <mask>*.xml</mask>
-    <mask>*.hpp, *cpp</mask>
-    <mask>BUILD</mask>
-    <mask>*hpp</mask>
-    <mask>*txt</mask>
-    <mask>*hpp, *cpp</mask>
-    <mask>*cpp</mask>
-    <mask>*cpp, *hpp</mask>
-    <mask>*json</mask>
-    <mask>*yaml</mask>
-    <mask>*md</mask>
-    <mask>*BUILD</mask>
-    <mask>*BUILD, *bazel</mask>
+    <mask>*.py</mask>
   </component>
 </application>
