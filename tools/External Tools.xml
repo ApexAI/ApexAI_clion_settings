@@ -86,8 +86,8 @@
   </tool>
   <tool name="Build Current" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_build_current_pkg.sh" />
-      <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
+      <option name="COMMAND" value="colcon" />
+      <option name="PARAMETERS" value="build --packages-select $ProjectName$" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
@@ -98,10 +98,18 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
+  <tool name="Build Up To Current" showInMainMenu="false" showInEditor="false"
+        showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="colcon" />
+      <option name="PARAMETERS" value="build --packages-up-to $ProjectName$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+    </exec>
+  </tool>
   <tool name="Test Current" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_test_current_pkg.sh" />
-      <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
+      <option name="COMMAND" value="_apex_clion_test" />
+      <option name="PARAMETERS" value="$ProjectName$" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
