@@ -142,7 +142,7 @@
       <path value="Toolbar Run Actions" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="Tool_External Tools_Doc linters" is_action="true" action_type="1" position="7">
+    <group value="Tool_External Tools_Doc linters Bazel" is_action="true" action_type="1" position="7">
       <path value="root" />
       <path value="Main Toolbar" />
       <path value="Toolbar Run Actions" />
@@ -237,6 +237,7 @@
     <action id="Tool_External Tools_Build Up To Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildUpTo.png" />
     <action id="Tool_External Tools_VectorCAST coverage Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/VC_CoveragePkg.png" />
     <action id="Tool_External Tools_Doc linters" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
+    <action id="Tool_External Tools_Doc linters Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
     <action id="Tool_External Tools_Clang Reformat" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
     <action id="Tool_External Tools_Insert and verify test id(s) Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Identify_test_uid.png" />
     <action id="Tool_External Tools_Axivion Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Axivion.png" />

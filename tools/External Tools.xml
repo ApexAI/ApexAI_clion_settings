@@ -20,6 +20,13 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
+  <tool name="Doc linters Bazel" description="Run apex_doc_lint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="bazel" />
+      <option name="PARAMETERS" value="run --ui_event_filters=-info --run_under=&quot;cd $ProjectFileDir$/.. &amp;&amp;&quot; //apex_internal/tools/apex_doc_tools:apex_doc lint -- --path $FilePathRelativeToProjectRoot$ check" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+    </exec>
+  </tool>
   <tool name="Axivion Bazel" description="Run Axivion on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_sca_current_pkg.sh" />
