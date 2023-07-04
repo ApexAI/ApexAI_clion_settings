@@ -15,7 +15,7 @@ fi
 if [ -n "$PACKAGE" ]; then
     PACKAGE_NAME=${PACKAGE##*/}
     set -ex
-    bazel run --ui_event_filters=-info --run_under="cd $(pwd) &&" //apex_tools/repo:repo.fix -- \
+    bazel run --ui_event_filters=-info --run_under="cd $(pwd) &&" //tools/repo:repo.fix -- \
 	//$PACKAGE:all
 else
     echo "Error: can't find package for $FILE_PATH file."
