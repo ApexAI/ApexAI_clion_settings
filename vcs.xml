@@ -9,6 +9,9 @@
       </list>
     </option>
   </component>
+  <component name="VcsApplicationSettings">
+    <option name="CREATE_CHANGELISTS_AUTOMATICALLY" value="true" />
+  </component>
   <component name="VcsEditorTab.Settings">
     <option name="openInNewWindow" value="true" />
   </component>
