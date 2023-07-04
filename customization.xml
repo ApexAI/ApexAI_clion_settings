@@ -226,30 +226,30 @@
       <path value="Toolbar Run Actions" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <action id="Tool_External Tools_Axivion" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Axivion.png" />
-    <action id="Tool_External Tools_Test Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_TestPkg.png" />
+    <action id="Tool_External Tools_Doc linters Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
     <action id="Tool_External Tools_Lint Cmake" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/LintCmake.png" />
     <action id="Tool_External Tools_Markdown linter" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Markdown_Linter.png" />
     <action id="Tool_External Tools_Markdown linter fix" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Markdown_Linter_Fix.png" />
-    <action id="Tool_External Tools_Test Current (Retest until fail)" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/RetestUntilFail.png" />
     <action id="Tool_External Tools_Bazel fix package" icon="Diff.MagicResolveConflicts" />
-    <action id="Tool_External Tools_Clang Reformat Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
-    <action id="Tool_External Tools_Build Up To Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildUpTo.png" />
     <action id="Tool_External Tools_VectorCAST coverage Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/VC_CoveragePkg.png" />
-    <action id="Tool_External Tools_Doc linters" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
-    <action id="Tool_External Tools_Doc linters Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
-    <action id="Tool_External Tools_Clang Reformat" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
-    <action id="Tool_External Tools_Insert and verify test id(s) Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Identify_test_uid.png" />
     <action id="Tool_External Tools_Axivion Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Axivion.png" />
     <action id="Tool_External Tools_Uncrustify" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Uncrustify.png" />
-    <action id="Tool_External Tools_CPPLint" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/CPPLint.png" />
     <action id="Tool_External Tools_Build Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildPkg.png" />
     <action id="Tool_External Tools_Allocation Analyzer" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Allocation_Analyzer.png" />
-    <action id="Tool_External Tools_PCLint" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/PCLint.png" />
     <action id="Tool_External Tools_Build Current Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildPkg.png" />
     <action id="Tool_External Tools_Bazel check package" icon="ProblemsView.QuickFixes" />
-    <action id="Tool_External Tools_PCLint (entire package)" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/PCLint.png" />
     <action id="Tool_External Tools_Copyright" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Copyright.png" />
+    <action id="Tool_External Tools_Axivion" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Axivion.png" />
+    <action id="Tool_External Tools_Test Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_TestPkg.png" />
+    <action id="Tool_External Tools_Test Current (Retest until fail)" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/RetestUntilFail.png" />
+    <action id="Tool_External Tools_Clang Reformat Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
+    <action id="Tool_External Tools_Build Up To Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildUpTo.png" />
+    <action id="Tool_External Tools_Doc linters" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
+    <action id="Tool_External Tools_Clang Reformat" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
+    <action id="Tool_External Tools_Insert and verify test id(s) Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Identify_test_uid.png" />
+    <action id="Tool_External Tools_CPPLint" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/CPPLint.png" />
+    <action id="Tool_External Tools_PCLint" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/PCLint.png" />
+    <action id="Tool_External Tools_PCLint (entire package)" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/PCLint.png" />
     <action id="Tool_External Tools_Test Current Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_TestPkg.png" />
   </component>
 </application>

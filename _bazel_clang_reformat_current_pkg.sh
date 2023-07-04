@@ -14,7 +14,7 @@ fi
 
 if [ -n "$PACKAGE" ]; then
     set -ex
-    bazel run --ui_event_filters=-info --run_under="cd $(pwd) &&" //apex_tools/repo:repo.fix -- \
+    bazel run --ui_event_filters=-info --run_under="cd $(pwd) &&" //tools/repo:repo.fix -- \
 	--checker clang-format $FILE_PATH
 else
     echo "Error: can't find package for $FILE_PATH file."
