@@ -126,6 +126,13 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
+  <tool name="Insert and verify test id(s) Current" description="Insert and verify the unique test id" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="identify_test_uid" />
+      <option name="PARAMETERS" value="insert $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
   <tool name="VectorCAST coverage Current" description="Create VectorCAST coverage report on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="_apex_clion_vc_coverage" />
@@ -133,11 +140,11 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
-  <tool name="Insert and verify test id(s) Current" description="Insert and verify the unique test id" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Generate requirements report" description="Build the html pages containing requirements" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="identify_test_uid" />
-      <option name="PARAMETERS" value="insert $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_build_html_requirements.sh" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
     </exec>
   </tool>
   <tool name="Allocation Analyzer" description="Run Alloc analyzer on current project + current target" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
