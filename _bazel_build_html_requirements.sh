@@ -6,4 +6,4 @@
 set -ex
 bazel run //apex_internal/tools/apex_doc_tools:apex_doc -- requirements
 
-firefox ../reqs/build/index.html&
+xdg-open doc/internal/build/index.html&
