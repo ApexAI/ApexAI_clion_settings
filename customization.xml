@@ -196,13 +196,13 @@
       <path value="Toolbar Run Actions" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="Tool_External Tools_Insert and verify test id(s) Current" is_action="true" action_type="1" position="16">
+    <group value="Tool_External Tools_VectorCAST coverage Current" is_action="true" action_type="1" position="16">
       <path value="root" />
       <path value="Main Toolbar" />
       <path value="Toolbar Run Actions" />
       <option name="myInitialPosition" value="-1" />
     </group>
-    <group value="Tool_External Tools_VectorCAST coverage Current" is_action="true" action_type="1" position="17">
+    <group value="Tool_External Tools_Generate requirements report" is_action="true" action_type="1" position="17">
       <path value="root" />
       <path value="Main Toolbar" />
       <path value="Toolbar Run Actions" />
@@ -226,6 +226,30 @@
       <path value="Toolbar Run Actions" />
       <option name="myInitialPosition" value="-1" />
     </group>
+    <group seperator="true" action_type="1" position="21">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Tool_External Tools_Build Current" is_action="true" action_type="1" position="22">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Tool_External Tools_Build Up To Current" is_action="true" action_type="1" position="23">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="Tool_External Tools_Test Current" is_action="true" action_type="1" position="24">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
     <action id="Tool_External Tools_Doc linters Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
     <action id="Tool_External Tools_Lint Cmake" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/LintCmake.png" />
     <action id="Tool_External Tools_Markdown linter" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Markdown_Linter.png" />
@@ -243,6 +267,7 @@
     <action id="Tool_External Tools_Test Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_TestPkg.png" />
     <action id="Tool_External Tools_Test Current (Retest until fail)" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/RetestUntilFail.png" />
     <action id="Tool_External Tools_Clang Reformat Bazel" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
+    <action id="Tool_External Tools_Generate requirements report" icon="Vcs.Log.AnnotateRevisionAction" />
     <action id="Tool_External Tools_Build Up To Current" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Colcon_BuildUpTo.png" />
     <action id="Tool_External Tools_Doc linters" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Doc_Linters.png" />
     <action id="Tool_External Tools_Clang Reformat" icon="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/icons/Clang_Format.png" />
