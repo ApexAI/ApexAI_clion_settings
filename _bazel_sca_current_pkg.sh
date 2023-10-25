@@ -13,10 +13,8 @@ else
 fi
 
 if [ -n "$PACKAGE" ]; then
-    PACKAGE_NAME=${PACKAGE##*/}
     set -ex
-    bazel run --ui_event_filters=-info //apex_internal/tools/sca_check -- \
-	--packages //$PACKAGE
+    bazel build --config=axivion //$PACKAGE
 else
     echo "Error: can't find package for $FILE_PATH file."
 fi
