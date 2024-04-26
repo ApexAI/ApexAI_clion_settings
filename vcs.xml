@@ -11,6 +11,7 @@
   </component>
   <component name="VcsApplicationSettings">
     <option name="CREATE_CHANGELISTS_AUTOMATICALLY" value="true" />
+    <option name="COMMIT_FROM_LOCAL_CHANGES" value="false" />
   </component>
   <component name="VcsEditorTab.Settings">
     <option name="openInNewWindow" value="true" />
