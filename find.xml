@@ -5,7 +5,6 @@
     <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.css</mask>
     <mask>*.html</mask>
-    <mask>*.xml</mask>
     <mask>*.cp</mask>
     <mask>*.inl</mask>
     <mask>*.ino</mask>
@@ -24,13 +23,19 @@
     <mask>*.tcc</mask>
     <mask>*.mm</mask>
     <mask>*.cc</mask>
-    <mask>*.h</mask>
-    <mask>*.c</mask>
-    <mask>*.hpp</mask>
-    <mask>*.cpp</mask>
-    <mask>*.txt</mask>
-    <mask>*.py</mask>
     <mask>BUILD</mask>
+    <mask>*.BUILD</mask>
+    <mask>*.yml</mask>
+    <mask>*.bzl</mask>
+    <mask>*.c</mask>
+    <mask>*.cfg</mask>
+    <mask>*.h</mask>
+    <mask>*.txt</mask>
+    <mask>*.hpp</mask>
     <mask>BUILD.bazel</mask>
+    <mask>*.cpp</mask>
+    <mask>*.py</mask>
+    <mask>*.xml</mask>
+    <mask>*.md</mask>
   </component>
 </application>
