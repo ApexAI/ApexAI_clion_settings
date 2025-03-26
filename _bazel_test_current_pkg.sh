@@ -27,7 +27,8 @@ if [ -n "$PACKAGE" ]; then
 	--runs_per_test=$RERUN \
 	--test_keep_going \
 	--test_summary=detailed \
-	--test_output=all
+	--test_output=all \
+	--test_verbose_timeout_warnings
 else
     echo "Error: can't find package for $FILE_PATH file."
 fi
