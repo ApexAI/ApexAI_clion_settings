@@ -14,7 +14,7 @@ fi
 
 if [ -n "$PACKAGE" ]; then
     set -ex
-    bazel build --config=axivion //$PACKAGE
+    bazel build --config=axivion //$PACKAGE:all
 else
     echo "Error: can't find package for $FILE_PATH file."
 fi
