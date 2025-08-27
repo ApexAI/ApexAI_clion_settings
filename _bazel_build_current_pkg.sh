@@ -17,7 +17,7 @@ if [ -n "$PACKAGE" ]; then
     bazel build //$PACKAGE:all \
 	--output_filter= \
 	--strip=never \
-	--platforms=//:gcc9-x86_64 \
+	--platforms=//:gcc11-x86_64 \
 	--config=strict_gcc
 else
     echo "Error: can't find package for $FILE_PATH file."
