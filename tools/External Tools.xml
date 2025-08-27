@@ -1,37 +1,16 @@
 <toolSet name="External Tools">
-  <tool name="Copyright" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="ament_copyright " />
-      <option name="PARAMETERS" value="$FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
-    </exec>
-  </tool>
-  <tool name="Lint Cmake" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="ament_lint_cmake" />
-      <option name="PARAMETERS" value="$FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
-    </exec>
-  </tool>
   <tool name="Doc linters" description="Run apex_doc_lint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="../.doc_scripts/apex_doc_lint" />
       <option name="PARAMETERS" value="--ci --symlinks --spelling --md" />
-      <option name="WORKING_DIRECTORY" value="$WorkspaceRoot$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
-  <tool name="Doc linters Bazel" description="Run apex_doc_lint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="bazel" />
-      <option name="PARAMETERS" value="run --ui_event_filters=-info --run_under=&quot;cd $ProjectFileDir$/.. &amp;&amp;&quot; //apex_internal/tools/apex_doc_tools:apex_doc lint -- --path $FilePathRelativeToProjectRoot$ check" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Axivion Bazel" description="Run Axivion on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Axivion Check" description="Run Axivion on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_sca_current_pkg.sh" />
       <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
     <filter>
       <option name="NAME" value="No name" />
@@ -39,11 +18,11 @@
       <option name="REGEXP" value=".*$FILE_PATH$:$LINE$.*" />
     </filter>
   </tool>
-  <tool name="Bazel check package" description="Run bazel repo.check on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Repo check package" description="Run bazel repo.check on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_check_current_pkg.sh" />
       <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
     <filter>
       <option name="NAME" value="No name" />
@@ -51,11 +30,11 @@
       <option name="REGEXP" value=".*$FILE_PATH$:$LINE$.*" />
     </filter>
   </tool>
-  <tool name="Bazel fix package" description="Run bazel repo.fix on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Repo fix package" description="Run bazel repo.fix on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_fix_current_pkg.sh" />
       <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
     <filter>
       <option name="NAME" value="No name" />
@@ -63,94 +42,48 @@
       <option name="REGEXP" value=".*$FILE_PATH$:$LINE$.*" />
     </filter>
   </tool>
-  <tool name="CPPLint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Uncrustify package" description="Run bazel repo.fix --checker=uncrustify on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="ament_cpplint" />
-      <option name="PARAMETERS" value="$FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_fix_current_pkg.sh" />
+      <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$ --checker=uncrustify" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
+    <filter>
+      <option name="NAME" value="No name" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value=".*$FILE_PATH$:$LINE$.*" />
+    </filter>
   </tool>
-  <tool name="Uncrustify" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Clang Reformat package" description="Run bazel repo.fix --checker=clang-format on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="ament_uncrustify " />
-      <option name="PARAMETERS" value="$FilePath$ --reformat" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_fix_current_pkg.sh" />
+      <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$ --checker=clang-format" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
+    <filter>
+      <option name="NAME" value="No name" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value=".*$FILE_PATH$:$LINE$.*" />
+    </filter>
   </tool>
-  <tool name="Clang Reformat" description="Run ament_clang_format with --reformat option and local or global .clang-format config" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="_apex_clion_clang_reformat" />
-      <option name="PARAMETERS" value="$FilePath$ $CMakeCurrentLocalBuildDir$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
-    </exec>
-  </tool>
-  <tool name="Clang Reformat Bazel" description="Run ament_clang_format with --reformat option and local or global .clang-format config" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_clang_reformat_current_pkg.sh" />
-      <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Build Current" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="colcon" />
-      <option name="PARAMETERS" value="build --packages-select $ProjectName$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Build Current Bazel" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Build Current package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_build_current_pkg.sh" />
       <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
-  <tool name="Build Up To Current" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="colcon" />
-      <option name="PARAMETERS" value="build --packages-up-to $ProjectName$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Test Current" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="_apex_clion_test" />
-      <option name="PARAMETERS" value="$ProjectName$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Test Current Bazel" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Test Current package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_test_current_pkg.sh" />
       <option name="PARAMETERS" value="$FilePathRelativeToProjectRoot$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Insert and verify test id(s) Current" description="Insert and verify the unique test id" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="identify_test_uid" />
-      <option name="PARAMETERS" value="insert $FilePath$" />
-      <option name="WORKING_DIRECTORY" value="$FileDir$" />
-    </exec>
-  </tool>
-  <tool name="VectorCAST coverage Current" description="Create VectorCAST coverage report on currently loaded package" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="_apex_clion_vc_coverage" />
-      <option name="PARAMETERS" value="$ProjectName$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
   <tool name="Generate requirements report" description="Build the html pages containing requirements" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
-      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_build_html_requirements.sh" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/.." />
-    </exec>
-  </tool>
-  <tool name="Allocation Analyzer" description="Run Alloc analyzer on current project + current target" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="allocation_analyzer" />
-      <option name="PARAMETERS" value="$ProjectName$ $CMakeCurrentTargetName$ --gui" />
+      <option name="COMMAND" value="$APPLICATION_CONFIG_DIR$/settingsRepository/repository/_bazel_build_current_pkg.sh" />
+      <option name="PARAMETERS" value="doc/internal/req" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
